@@ -4,6 +4,69 @@
   <title>
     Zodanga
   </title>
+  <style>
+  h1 {
+    text-align:center;
+    color:Magenta;
+    font-weight: bold;
+  }
+  p {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    font-size: 20;
+    text-align: center;
+    color: blue;
+    font-style: bold;
+  }
+  #Para::selection {
+    color: red;
+    background-color: yellow;
+  }
+  input{
+    align:center;
+    border: 2px;
+  }
+  ol < li {
+    color: red;
+  }
+  input[type = text]{
+    background-color: red;
+  }
+  input[type = number]{
+    background-color: yellow;
+  }
+  button{
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    background-color: green;
+  }
+  button:hover {
+    background-color: orange;
+  }
+  a::before {
+    content: "\21d2 Click here: ";
+    font-weight: bolder;
+  }
+  @media print {
+    .screen-play{
+      display: none;
+    }
+  }
+  @media (min-width:200px) {
+    body {
+      background-color: cyan;
+    }
+  }
+  @media (max-width:300px){
+    body {
+      background-color: red;
+    }
+  }
+
+  </style>
+  <meta name="viewport" content="width=device-width, intitial-scale=1.0">
   <link rel="stylesheet" href="C:/Users/innkannati/Documents/GitHub/Charan-Kannati/Zodstyle.css">
 </head>
 <body bgcolor = "cyan">
@@ -21,6 +84,7 @@
      <input type="email" placeholder="Email" name="Email">
      <label>Password</label>
      <input type="password" placeholder="Password" name="password">
+     <input type="number" placeholder="Mobile number" name="mobile number">
      <label>Choose your Favourite colour</label>
      <input type="radio" value="red"   name="color">Red
      <input type="radio" value="blue" name="color">Blue
@@ -38,5 +102,26 @@
      </div>
      <button>Submit</button>
    </form>
+   <ol>
+     <li>First item</li>
+     <li>Second item</li>
+    <ul>
+      <li>List 1</li>
+      <li>List 2</li>
+    </ul>
+    <li>Third item</li>
+  </ol>
+  <ul>
+    <li><a href = "#">One</a></li>
+    <li><a href = "#">Two</a></li>
+    <li><a href = "#">Three</a></li>
+  </ul>
+  <div id = "Para">anna is so great and sexy
+    Love me anna , I'll give you my
+    Whole world.</div>
+  <div class="screen-play">
+    This wont appear when you try to print
+    the webpage. Thank you.
+  </div>
 </body>
 </html>
