@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+  <link rel="stylesheet" href="C:/Users/innkannati/Documents/GitHub/Charan-Kannati/templates/Response.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <style>
+  h1{
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+  <h1>{{ Header }}</h1>
+  <div class=container1>
+    <div class="col-lg-3 col-sm-6">A. Python</div>
+    <div class="col-lg-3 col-sm-6">B. Java</div>
+    <div class="col-lg-3 col-sm-6">C. Javascript</div>
+    <div class="col-lg-3 col-sm-6">D. HTML</div>
+    <div class="col-lg-3 col-sm-6">E. Meta language</div>
+    <div class="col-lg-3 col-sm-6">F. CSS</div>
+    <div class="col-lg-3 col-sm-6">G. PHP</div>
+    <div class="col-lg-3 col-sm-6">H. Android Programming</div>
+    <div class="col-lg-3 col-sm-6">I. C</div>
+    <div class="col-lg-3 col-sm-6">J. C++</div>
+    <div class="col-lg-3 col-sm-6">K. React.js</div>
+    <div class="col-lg-3 col-sm-6">L. Node.js</div>
+    <div class="col-lg-3 col-sm-6">M. TensorFlow</div>
+    <div class="col-lg-3 col-sm-6">N. ES6</div>
+  </div>
+  <div class="grid">
+    <div class="grid-item">A. Python</div>
+    <div class="grid-item">B. Java</div>
+    <div class="grid-item">C. Javascript</div>
+    <div class="grid-item">D. HTML</div>
+    <div class="grid-item">E. Meta language</div>
+    <div class="grid-item">F. CSS</div>
+    <div class="grid-item">G. PHP</div>
+    <div class="grid-item">H. Android Programming</div>
+    <div class="grid-item">I. C</div>
+    <div class="grid-item">J. C++</div>
+    <div class="grid-item">K. React.js</div>
+    <div class="grid-item">L. Node.js</div>
+    <div class="grid-item">M. TensorFlow</div>
+    <div class="grid-item">N. ES6</div>
+  </div>
+  <div class = "container">
+    <div class="alert alert-primary" role="alert">
+      Some news</div>
+    <div class="alert alert-success" role="alert">
+      Good news</div>
+    <div class="alert alert-danger" role="alert">
+      Bad News</div>
+  </div>
+  <h1 style="text-align:center;">Important languages</h1>
+<ul>
+  {% for name in names %}
+    <li>{{ name }}</li>
+  {% endfor %}
+</ul>
+<a href="{{ url_for("display") }}"><h1>Bye</h1></a>
+</body>
+</html.
