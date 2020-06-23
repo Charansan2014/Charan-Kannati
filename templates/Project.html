@@ -1,0 +1,17 @@
+<htm;>
+<head>
+  <title>Informite</title>
+  <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
+</head>
+<body>
+  <h1>{% block heading %}{% endblock %}</h1>
+  <h2>Welcome</h2>
+  {% block body %}
+  {% endblock %}
+  <ul>
+    {% for name in names %}
+      <li>{{ name }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
